@@ -13,11 +13,17 @@ Assume we have a directory *~/test* with files:
     RhoA2G_LA_1s_01_w16TIRF CFP_t67.TIF
     etc.
 
-Executing *./chsort ~/test* will put these files into subfolders:
+The filenames above contain:
+
+ - experiment name, RhoA2G_LA_1s_01
+ - channel name w16TIRF CFP
+ - time point, t67
+ 
+"./chsort ~/test" puts these files into subfolders based on experiment name and channel name:
    RhoA2G_LA_1s_01/w26TIRFFRETacceptor/RhoA2G_LA_1s_01_w26TIRFFRETacceptor_t75.TIF
-   RhoA2G_LA_1s_01/w16TIRF-CFP/RhoA2G_LA_1s_01_w16TIRF CFP_t67.TIF
+   RhoA2G_LA_1s_01/w16TIRF-CFP/RhoA2G_LA_1s_01_w16TIRF-CFP_t67.TIF
   
-Note, spaces in subfolders will be replaced by dashes.
+Note, spaces in subfolders and file names are replaced by dashes.
  
 Reg-ex pattern for extracting folder names from the filename defined by variable *regex*.
  
