@@ -46,13 +46,14 @@ Usage:
 $(basename "$0") [-h] [-f char] [-t char] path
 
 where:
-	-h | --help		Show this Help text.
-	-e | --ext		File extension (default TIF).
+	-h | --help	Show this Help text.
+	-e | --ext	File extension (default TIF).
 	-d | --debug	Test mode. Explicitly prints extracted and padded numbers. Don't use for "
 	
 
 # string: extension of image files
 FEXT=TIF
+
 # Flag for test mode
 TST=0
 

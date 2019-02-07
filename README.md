@@ -4,6 +4,8 @@ Author           : Maciej Dobrzynski
 
 Date created     : 20171243
 
+Last update      : 20190207
+
 Purpose          : Process files in the specified directory and move them to
 				  folders based on the filename.
 
@@ -26,6 +28,9 @@ The filenames above contain:
 Note, spaces in subfolders and file names are replaced by dashes.
  
 Reg-ex pattern for extracting folder names from the filename defined by variable *regex*.
+
+After executing chsort.sh, the remaining nd files can be moved to their respective folders 
+(based on the filename) using fsort.sh script.
  
 **WARNING**: uses GNU getopt
 Standard OSX installation of getopt doesn't support long params
