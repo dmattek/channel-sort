@@ -58,7 +58,7 @@ FEXT=TIF
 TST=0
 
 # read arguments
-TEMP=`getopt -o dhf:t: --long debug,help,from:,to: -n 'fextch.sh' -- "$@"`
+TEMP=`getopt -o dhe: --long debug,help,ext: -n 'chsort.sh' -- "$@"`
 eval set -- "$TEMP"
 
 # Extract options and their arguments into variables.
